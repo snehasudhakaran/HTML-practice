@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    .container{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width:30%;
+        display:block;
+        margin:auto;
+        background-color: green;
+        padding:20px;
+        color:white;
+        margin-top: 100px;
+    }
+    h1{
+        margin-bottom: 15px;
+    }
+    label{
+        display: inline-block;
+        margin-bottom: 7px;
+    }
+    input{
+        width:100%;
+        padding: 6px 4px 6px;
+    }
+    input[type="submit"]{
+        background-color: white;
+        width:100%;
+        border:none;
+        color:green;
+        font-weight: bold;
+        padding: 6px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Login</h1>
+
+    <form action="/login.php" method="post">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" placeholder="username"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="password"><br><br>
+
+    <input type="submit" value="Login">
+    </form>
+
+</div>
+
+</body>
+</html>
