@@ -1,18 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foody</title>
+<title>Login Page</title>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    .container{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width:30%;
+        display:block;
+        margin:auto;
+        background-color: green;
+        padding:20px;
+        color:white;
+        margin-top: 100px;
+    }
+    h1{
+        margin-bottom: 15px;
+    }
+    label{
+        display: inline-block;
+        margin-bottom: 7px;
+    }
+    input{
+        width:100%;
+        padding: 6px 4px 6px;
+    }
+    input[type="submit"]{
+        background-color: white;
+        width:100%;
+        border:none;
+        color:green;
+        font-weight: bold;
+        padding: 6px;
+    }
+</style>
 </head>
-<body style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <h1>Foody</h1>
-    <img src="./asset/images/food-1.jpeg" height="200px">
-    <h2>About Us</h2>
-    <h4>Welcome to modern restaurant with a focus on premium food tastes</h4>
-    <p>We invite you to celebrate our restaurant's delicious recipes whether you are<br> here for a business lunch or dinner. Discover new tastes<br> and inspired recipes from all over the world.</p>
-    <button>FIND MORE</button>
-    <button><a href="registration.html">REGISTER</a></button>
+<body>
+<div class="container">
+    <h1>Login</h1>
+
+    <form>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" placeholder="username"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="password"><br><br>
+
+    <input type="submit" value="Login">
+    </form>
+
+</div>
+
 </body>
 </html>
